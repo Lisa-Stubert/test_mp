@@ -1,0 +1,96 @@
+{
+	"Portalconfig": {
+
+	"portalTitle": {
+		"title": "Portaltitel",
+		"logo": "../mastercode/2_13_1/img/berlin_logo.png"
+	},
+
+	"menu": {
+		"tree": {
+			"name": "Themen"
+		},
+		"tools": {
+			"name": "Werkzeuge",
+			"children": {
+				"gfi": {
+					"name": "Informationen abfragen",
+					"active": true
+				},
+				"measure": {
+					"name": "Strecke / Fläche messen"
+				},
+				"draw": {
+					"name": "Zeichnen / Schreiben"
+				},
+				"fileImport": {
+					"name": "Datei Import"
+				},
+				"saveSelection": {
+					"name": "Auswahl speichern"
+				}
+			}
+		},
+		"info": {
+			"name": "Informationen",
+			"children": {
+				"staticlinks": [
+					{
+						"name": "Masterportal",
+						"url": "https://masterportal.org"
+					}
+				]
+			}
+		}	
+	},
+	"treeType": "light",
+
+	"mapView": {
+		"startCenter": [390572.573,5816084.157],
+		"epsg": "EPSG:25833",
+		"extent": [370000.0, 5800000.0,415000.0, 5837000.0],
+		"startZoomLevel": 9
+	},
+
+		"searchBar": {
+			"komoot": {
+				"minChars": 3,
+				"serviceId": "11",
+				"limit": 20,
+				"lang": "de",
+				"lat": 53.6,
+				"lon": 10.0,
+				"bbox": "13,52.3,13.7,52.7"
+    		},
+      	"visibleVector": {},
+      	"tree": {},
+			"startZoomLevel": 9,
+			"placeholder": "Adresssuche"
+		},
+		"controls": {
+			"zoom": true,
+			"orientation": {
+				"zoomMode": "once"
+			},
+			"attributions": true,
+			"mousePosition": true
+		}
+	},
+
+
+	"Themenconfig": {
+		"Hintergrundkarten": {
+			"Layer": [
+				{
+				"id": "luftbild",
+				"name": "Digitale Orthophotos",
+				"visibility": true
+				}
+			]
+		},
+		"Fachdaten": {
+			"Layer": [
+			]
+		}
+	}
+}
